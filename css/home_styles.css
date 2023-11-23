@@ -1,0 +1,102 @@
+header {
+  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: hidden;
+  color: white;
+
+  background-color: black;
+
+  /* background-image: url("../Images/Projects/BackyardWithFence.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+.addons-header {
+  height: 100%;
+  width: 100%;
+  height: 88.9vh;
+
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 55% 35% 10%;
+  grid-template-areas: ". ." "items ." ". .";
+}
+.addons-header-container {
+  grid-area: items;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2.5vh;
+}
+#title-header {
+  font-size: 65px;
+}
+#subtitle-header {
+  font-size: 25px;
+}
+#button-header button {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 1.75vh;
+}
+
+@media screen and (max-width: 1038px) {
+  #title-header {
+    font-size: 60px;
+  }
+  #subtitle-header {
+    font-size: 20px;
+  }
+  #button-header button {
+    font-size: 12px;
+    margin-top: 1.6vh;
+  }
+}
+@media screen and (max-width: 798px) {
+  #title-header {
+    font-size: 55px;
+  }
+  #subtitle-header {
+    font-size: 16px;
+  }
+  #button-header button {
+    font-size: 10px;
+    margin-top: 1.5vh;
+  }
+}
+@media screen and (max-height: 750px) {
+  .addons-header {
+    height: 85vh;
+  }
+}
+@media screen and (max-width: 650px) {
+  .addons-header {
+    grid-template-areas: ". ." "items items" ". .";
+  }
+}
+@media screen and (max-height: 515px) {
+  .addons-header {
+    grid-template-columns: 100%;
+    grid-template-rows: 90% 10%;
+    grid-template-areas: "items" ".";
+  }
+}
+@media screen and (max-height: 450px) {
+  #title-header {
+    font-size: 45px;
+  }
+  #subtitle-header {
+    font-size: 15px;
+  }
+  #button-header button {
+    font-size: 10px;
+    margin-top: 1.5vh;
+  }
+}
+@media screen and (max-height: 400px) {
+  .addons-header {
+    height: 80vh;
+  }
+}
